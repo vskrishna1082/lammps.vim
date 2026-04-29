@@ -22,7 +22,7 @@ syn keyword    lammpsData        atoms bonds angles dihedrals xlo xhi ylo yhi zl
 syn keyword    lammpsRepeat      jump next loop label
 syn keyword    lammpsOperator    equal add sub mult div string
 syn keyword    lammpsConditional if then elif else
-syn keyword    lammpsSpecial     EDGE NULL &-&
+syn keyword    lammpsSpecial     EDGE NULL
 syn keyword    lammpsConstant    PI version on off true false yes no
 
 syn region     lammpsString      start=+'+ end=+'+    oneline
@@ -35,6 +35,7 @@ syn match      lammpsComment     "#\(.*&\s*\n\)*.*$"
 syn match      lammpsVariable    "\$\({[a-zA-Z0-9_]\+}\)"
 syn match      lammpsVariable    "\$[A-Za-z]"
 syn match      lammpsCoeffs      "\<[A-Z][a-z]\+\sCoeffs\>"
+syn match      lammpsSpecial     "&"
 
 if !exists("did_lammps_syntax_inits")
   let did_lammps_syntax_inits = 1
