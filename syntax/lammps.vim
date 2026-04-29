@@ -35,7 +35,7 @@ syn match      lammpsComment     "#\(.*&\s*\n\)*.*$"
 syn match      lammpsVariable    "\$\({[a-zA-Z0-9_]\+}\)"
 syn match      lammpsVariable    "\$[A-Za-z]"
 syn match      lammpsCoeffs      "\<[A-Z][a-z]\+\sCoeffs\>"
-syn match      lammpsSpecial     "&"
+syn match      lammpsRepeat     "&"
 
 if !exists("did_lammps_syntax_inits")
   let did_lammps_syntax_inits = 1
