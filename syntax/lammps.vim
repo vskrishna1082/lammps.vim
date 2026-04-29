@@ -22,7 +22,7 @@ syn keyword    lammpsData        atoms bonds angles dihedrals xlo xhi ylo yhi zl
 syn keyword    lammpsRepeat      jump next loop label
 syn keyword    lammpsOperator    equal add sub mult div string
 syn keyword    lammpsConditional if then elif else
-syn keyword    lammpsSpecial     EDGE NULL \&
+syn keyword    lammpsSpecial     EDGE NULL &&
 
 syn region     lammpsString      start=+'+ end=+'+    oneline
 syn region     lammpsString      start=+"+ end=+"+    oneline
