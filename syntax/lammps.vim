@@ -6,7 +6,7 @@
 
 syn clear
 
-syn keyword    lammpsOutput      log write_data write_dump info shell write_restart restart dump undump thermo thermo_modify thermo_style print timer
+syn keyword    lammpsOutput      log write_data write_dump info shell write_restart restart dump dump_modify undump thermo thermo_modify thermo_style print timer
 syn keyword    lammpsRead        include read_restart read_data read_dump molecule
 syn keyword    lammpsLattice     boundary units atom_style lattice region create_box create_atoms dielectric
 syn keyword    lammpsLattice     delete_atoms displace_atoms change_box dimension replicate
@@ -19,10 +19,10 @@ syn keyword    lammpsRun         minimize run rerun tad neb prd quit server temp
 syn keyword    lammpsRun         min/spin message hyper dynamical_matrix
 syn keyword    lammpsDefine      variable group compute python set uncompute kim_query
 syn keyword    lammpsData        atoms bonds angles dihedrals xlo xhi ylo yhi zlo zhi Masses Atoms
-syn keyword    lammpsRepeat      jump next loop
-syn keyword    lammpsOperator    equal add sub mult div
+syn keyword    lammpsRepeat      jump next loop label
+syn keyword    lammpsOperator    equal add sub mult div string
 syn keyword    lammpsConditional if then elif else
-syn keyword    lammpsSpecial     EDGE NULL &
+syn keyword    lammpsSpecial     EDGE NULL \&
 
 syn region     lammpsString      start=+'+ end=+'+    oneline
 syn region     lammpsString      start=+"+ end=+"+    oneline
